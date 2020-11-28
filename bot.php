@@ -1,6 +1,9 @@
 <?php
-////////BENCHAMIN LOUIS//////
-//CHANNEL:- T.ME/INDUSBOTS////
+/*
+AUTHON:- RITHUNAND K <<BENCHAMXD>>
+
+CHANNEL:- @INDUSBOTS
+*/
 error_reporting(0);
 
 set_time_limit(0);
