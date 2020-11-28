@@ -60,11 +60,23 @@ $chatid = $update->callback_query->message->chat->id;
 $callback_query = $update->callback_query->data;
 $messageid = $update->callback_query->message->message_id;
 $reply = $update->message->reply_to_message->message_id;
-  $date = date("d/m/y");
-$AdminID = 1222113933; //admin user id get it from @MissRose_bot 
- $log = -1001412381389;
-$jk = -1001237862679;
+$log = -1001412381389;
 //===============BENCHAM=============//
+$tch = json_decode(file_get_contents("https://api.telegram.org/bot".API_KEY."/getChatMember?chat_id=@Cute_baby_gif&user_id=".$from_id))->result->status;
+if($tch != 'member' && $tch != 'creator' && $tch != 'administrator'){
+bot('sendMessage',['chat_id'=>$from_id,'text'=>"***Sorry Dude,
+
+You need to join my update channel to use me
+
+Join now:- @Cute_baby_gif***",
+'parse_mode'=>"MarkDown",
+'reply_markup' => json_encode([
+'inline_keyboard' => [
+[['text' => "OUR CHANNEL", 'url' => "https://telegram.me/Cute_baby_gif"]],
+
+]])
+]);
+}Else{
 if ($text == "/start"){
 
             bot('sendmessage', [
