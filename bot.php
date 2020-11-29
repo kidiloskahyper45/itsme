@@ -89,6 +89,7 @@ Bot('sendmessage',[
 'parse_mode'=>"MarkDown",
 ]);
 }
+}
 
 if ($callback_query == "get"){
 bot('copyMessage', [
@@ -98,4 +99,3 @@ bot('copyMessage', [
                
                ]);
         }    
-}
