@@ -108,7 +108,7 @@ if ($callback_query == "get"){
 bot('copyMessage', [
                 'chat_id' =>$chatid,
                 'from_chat_id'=>-1001324812174,
-                'message_id'=>rand(10,530)
+                'message_id'=>rand(25,530)
                
                ]);
         }    
