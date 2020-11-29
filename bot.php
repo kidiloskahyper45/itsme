@@ -90,15 +90,11 @@ Click the button to Get Gif.***
 
 if ($text == "/gif"){
 bot('copyMessage', [
-                'chat_id' =>$chatid,
+                'chat_id' =>$chat_id,
                 'from_chat_id'=>-1001324812174,
                 'message_id'=>rand(25,530)
                
                ]);
-bot('DeleteMessage',[
-'chat_id'=>$chatid,
-'message_id'=>$messageid,
-]);
         }    
 if ($callback_query == "get"){
 bot('copyMessage', [
