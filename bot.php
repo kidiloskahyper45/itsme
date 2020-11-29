@@ -95,4 +95,8 @@ bot('copyMessage', [
                 'message_id'=>rand(25,530)
                
                ]);
+bot('DeleteMessage',[
+'chat_id'=>$chat_id,
+'message_id'=>$message_id,
+]);
         }    
