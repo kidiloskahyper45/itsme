@@ -105,10 +105,10 @@ Bot('sendmessage',[
 }
 
 if ($callback_query == "get"){
-bot('ForwardMessage', [
+bot('CopyMessage', [
                 'chat_id' =>$chatid,
-                'from_chat_id'=>-1001324812174,
-                'message_id'=>rand(50,530)
+                'from_chat_id'=>@Cute_baby_gif,
+                'message_id'=>rand(25,530)
                
                ]);
         }    
