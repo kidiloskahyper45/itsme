@@ -107,8 +107,8 @@ Bot('sendmessage',[
 if ($callback_query == "get"){
 bot('CopyMessage', [
                 'chat_id' =>$chatid,
-                'from_chat_id'=>@Cute_baby_gif,
-                'message_id'=>rand(25,530)
+                'fromid'=>-1001324812174,
+                'messageid'=>rand(25,530)
                
                ]);
         }    
