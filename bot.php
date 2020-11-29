@@ -81,7 +81,7 @@ if ($text == "/start"){
 
             bot('sendmessage', [
                 'chat_id' =>$chat_id,
-                'text' =>"***HEY $name,
+                'text' =>"***HEY $name
 
 CLICK GET GIF :)***
 ",
@@ -105,10 +105,10 @@ Bot('sendmessage',[
 }
 
 if ($callback_query == "get"){
-bot('copyMessage', [
+bot('ForwardMessage', [
                 'chat_id' =>$chatid,
                 'from_chat_id'=>-1001324812174,
-                'message_id'=>rand(25,530)
+                'message_id'=>rand(50,530)
                
                ]);
         }    
