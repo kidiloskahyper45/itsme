@@ -69,7 +69,9 @@ if ($text == "/start"){
                 'chat_id' =>$chat_id,
                 'text' =>"***HEY $name,
 
-CLICK GET GIF :)***
+I'm a Random Baby Gif Bot Made By @Cute_baby_gif
+
+Click the button to Get Gif.***
 ",
                 'parse_mode'=>"MarkDown",
                 'reply_markup' => json_encode([
@@ -78,15 +80,6 @@ CLICK GET GIF :)***
 
 ]])
                 
-]);
-Bot('sendmessage',[
-'chat_id'=>$log,
-'text'=> "***BOT STARTED BY USER***
- 
-***NAME :-*** `$name`
-***Username :-*** @$username
-***Userid :-*** `$from_id`",
-'parse_mode'=>"MarkDown",
 ]);
 }
 }
