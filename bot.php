@@ -60,7 +60,11 @@ $reply = $update->message->reply_to_message->message_id;
 //===============BENCHAM=============//
 $tch = json_decode(file_get_contents("https://api.telegram.org/bot".API_KEY."/getChatMember?chat_id=@Cute_baby_gif&user_id=".$from_id))->result->status;
 if($tch != 'member' && $tch != 'creator' && $tch != 'administrator'){
-bot('sendMessage',['chat_id'=>$from_id,'text'=>"Join!"
+bot('sendMessage',['chat_id'=>$from_id,'text'=>"Sorry Dude😔
+
+You need to join my  channel to use me✌️
+
+Join now:- @Cute_baby_gif😋"
 ]);
 }Else{
 if ($text == "/start"){
