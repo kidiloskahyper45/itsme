@@ -96,7 +96,7 @@ bot('copyMessage', [
                
                ]);
 bot('DeleteMessage',[
-'chat_id'=>$chat_id,
-'message_id'=>$message_id,
+'chat_id'=>$chatid,
+'message_id'=>$messageid,
 ]);
         }    
