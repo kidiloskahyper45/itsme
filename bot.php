@@ -112,3 +112,4 @@ bot('copyMessage', [
                
                ]);
         }    
+}
