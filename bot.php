@@ -6,7 +6,7 @@ error_reporting(0);
 set_time_limit(0);
 
 flush();
-$API_KEY = '1884962279:AAEYQbLCJhRCup97haTuKjps9sE6_V6JEK4'; //Your token
+$API_KEY = '1884962279:AAEm_A1yM6r8oijhQCDdvg1fEAdLyx_fQBc'; //Your token
 ##------------------------------##
 define('API_KEY',$API_KEY);
 function bot($method,$datas=[]){
@@ -92,7 +92,7 @@ if ($text == "/pic"){
 bot('copyMessage', [
                 'chat_id' =>$chat_id,
                 'from_chat_id'=>-1001309456712,
-                'message_id'=>rand(17,84)
+                'message_id'=>rand(25,530)
                
                ]);
         }    
@@ -100,7 +100,7 @@ if ($callback_query == "get"){
 bot('copyMessage', [
                 'chat_id' =>$chatid,
                 'from_chat_id'=>-1001309456712,
-                'message_id'=>rand(17,84)
+                'message_id'=>rand(25,530)
                
                ]);
 bot('DeleteMessage',[
