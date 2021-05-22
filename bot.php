@@ -58,7 +58,7 @@ $callback_query = $update->callback_query->data;
 $messageid = $update->callback_query->message->message_id;
 $reply = $update->message->reply_to_message->message_id;
 //===============BENCHAM=============//
-$tch = json_decode(file_get_contents("https://api.telegram.org/bot".API_KEY."/getChatMember?chat_id=@Cute_baby_gif&user_id=".$from_id))->result->status;
+$tch = json_decode(file_get_contents("https://api.telegram.org/bot".API_KEY."/getChatMember?chat_id=@HOT_MEMS08&user_id=".$from_id))->result->status;
 if($tch != 'member' && $tch != 'creator' && $tch != 'administrator'){
 bot('sendMessage',['chat_id'=>$from_id,'text'=>"Sorry Dude😔
 
@@ -88,7 +88,7 @@ Click the button to Get pic.***
 }
 }
 
-if ($text == "/gif"){
+if ($text == "/pic"){
 bot('copyMessage', [
                 'chat_id' =>$chat_id,
                 'from_chat_id'=>-1001309456712,
