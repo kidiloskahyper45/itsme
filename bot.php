@@ -92,7 +92,7 @@ if ($text == "/pic"){
 bot('copyMessage', [
                 'chat_id' =>$chat_id,
                 'from_chat_id'=>-1001309456712,
-                'message_id'=>rand(25,530)
+                'message_id'=>rand(17,84)
                
                ]);
         }    
@@ -100,7 +100,7 @@ if ($callback_query == "get"){
 bot('copyMessage', [
                 'chat_id' =>$chatid,
                 'from_chat_id'=>-1001309456712,
-                'message_id'=>rand(25,530)
+                'message_id'=>rand(17,84)
                
                ]);
 bot('DeleteMessage',[
